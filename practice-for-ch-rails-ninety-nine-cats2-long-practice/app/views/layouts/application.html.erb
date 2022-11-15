@@ -12,6 +12,8 @@
   </head>
 
   <body>
+  <% if logged_in? %>
+  <h2>welcome <%= current_user.username %></h2>
     <nav class="main-nav">
       <h1><a href="<%= cats_url %>">99 Cats</a></h1>
     </nav>
